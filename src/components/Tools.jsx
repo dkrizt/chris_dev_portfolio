@@ -1,0 +1,68 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import {
+  SiJavascript,
+  SiTypescript,
+  SiMongodb,
+  SiPostgresql,
+  SiExpress,
+  SiReact,
+  SiApollographql,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiTailwindcss,
+  SiFramer,
+  SiFirebase,
+} from 'react-icons/si';
+
+const Tools = () => {
+  const tools = [
+    { name: 'JavaScript', icon: <SiJavascript className="text-yellow-400" /> },
+    { name: 'TypeScript', icon: <SiTypescript className="text-blue-500" /> },
+    { name: 'MongoDB', icon: <SiMongodb className="text-green-500" /> },
+    { name: 'PostgreSQL', icon: <SiPostgresql className="text-blue-600" /> },
+    { name: 'Express.js', icon: <SiExpress className="text-gray-400" /> },
+    { name: 'React.js', icon: <SiReact className="text-cyan-400" /> },
+    { name: 'Next.js', icon: <SiNextdotjs className="text-gray-300" /> },
+    { name: 'Tailwind', icon: <SiTailwindcss className="text-cyan-400" /> },
+    {
+      name: 'Apollographql',
+      icon: <SiApollographql className="text-pink-500" />,
+    },
+    { name: 'Node.js', icon: <SiNodedotjs className="text-green-600" /> },
+    { name: 'Framer Motion', icon: <SiFramer className="text-yellow-400" /> },
+    { name: 'Firebase', icon: <SiFirebase className="text-yellow-400" /> },
+  ];
+
+  return (
+    <div className="bg-gray-100 dark:bg-gray-900 text-center px-6 py-16 my-4 rounded-xl shadow-lg opacity-90 border-violet-700- z-10">
+      <motion.h2
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: -10, opacity: 1 }}
+        whileInView={{ y: 0, opacity: 1, scale: 1.1 }}
+        transition={{ duration: 0.8 }}
+        className="text-4xl font-bold mb-6 bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent"
+      >
+        Checkout Some Tools in My DevTools Box
+      </motion.h2>
+      <div className="grid grid-cols-2 m2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
+        {tools.map((tool, index) => (
+          <motion.div
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: -10, opacity: 1 }}
+            whileInView={{ y: 0, opacity: 1, scale: 1.1 }}
+            transition={{ duration: 0.8 }}
+            key={index}
+            className="flex flex-col items-center p-4 rounded-lg shadow-md hover:scale-125 transition-transform duration-200"
+          >
+            <div className="text-4xl mb-2">{tool.icon}</div>
+            <p className="text-lg font-medium">{tool.name}</p>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+//bg-white dark:bg-gray-800
+export default Tools;

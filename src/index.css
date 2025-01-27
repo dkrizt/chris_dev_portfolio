@@ -1,0 +1,89 @@
+/* CSS Reset: Normalize with Tailwind Integration */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Remove all default margins and paddings */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure consistent box-sizing model */
+}
+
+/* Set body to full width and height, and prevent extra scrollbars */
+/* Ensure the scrollbar is visible above the particles */
+html,
+body {
+  overflow-y: auto;
+  z-index: 1; /* Ensures content including scrollbar is above background */
+  position: relative; /* Creates a stacking context for z-index */
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 12px; /* Set scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(217, 172, 229, 0.1); /* Track color (light gray) */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #6a5acd, #ff69b4); /* Gradient thumb */
+  border-radius: 6px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #ff69b4, #ff4500); /* Hover effect */
+}
+
+/* Optional: Set scrollbar styles for Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #41274bd8 #f0f0f0;
+}
+
+/* Remove list styles on all lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default text decoration and colors for links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ensure images don't exceed their container */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remove button focus outlines (visible focus is handled by Tailwind's focus utilities) */
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Consistent form element appearance */
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  resize: none;
+}
+
+/* Set smooth scrolling for better user experience */
+html {
+  scroll-behavior: smooth;
+}
