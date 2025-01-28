@@ -8,6 +8,7 @@ import Nav from './components/Nav';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Tools from './components/Tools';
+import About from './components/About';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true); // Dark mode state
@@ -44,6 +45,7 @@ function App() {
         />
         <Hero darkMode={darkMode} />
         <Projects />
+        <About darkMode={darkMode} />
         <Tools />
         <Footer darkMode={darkMode} />
       </div>

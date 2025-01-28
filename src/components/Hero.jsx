@@ -48,20 +48,18 @@ const Hero = ({ darkMode }) => {
             My most used tech stacks includes JavaScript (React, Nodejs and
             Nextjs), TailwindCSS, Express.js & PostgreSQL or Firebase/Firestore!
           </p>
-          <motion.button
+          <motion.a
+            href="mailto:donkrizt@gmail.com?subject=Let's Connect&body=Hi Christian,"
             className="bg-gradient-to-r from-violet-500 to-pink-500 hover:from-pink-500 hover:to-orange-500 transition duration-300 rounded-full w-44 h-12 px-5 py-2 text-white font-semibold flex items-center gap-2"
-            initial={{ x: 100, opacity: 0 }} // Start off-screen to the left
-            animate={{ x: 0, opacity: 1 }} // Animate to the normal position
-            // exit={{ x: -50 }} // Optional exit animation (if needed)
+            initial={{ y: 100, opacity: 0.5 }}
+            animate={{ y: 0, opacity: 1 }}
             transition={{
-              // repeat: Infinity,
-              // repeatType: 'reverse', // Makes the animation retrace
-              duration: 0.8, // A slightly longer duration for smoothness
+              duration: 0.3,
             }}
           >
             Get in touch{' '}
             <FontAwesomeIcon icon={faArrowRight} className="w-4 h-4" />
-          </motion.button>
+          </motion.a>
         </div>
       </div>
       <motion.div

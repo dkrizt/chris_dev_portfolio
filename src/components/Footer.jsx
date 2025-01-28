@@ -11,7 +11,7 @@ const Footer = ({ darkMode }) => {
 
   return (
     <footer
-      className={`py-6 px-4 border-t z-10 ${
+      className={`py-12 px-4 border-t z-10 ${
         darkMode ? 'bg-gray-900 border-gray-700' : 'bg-gray-100 border-gray-300'
       }`}
     >
@@ -26,36 +26,36 @@ const Footer = ({ darkMode }) => {
         </p>
 
         {/* Social Media Icons */}
-        <div className="flex gap-4">
+        <div id="contact" className="flex gap-4">
           <a
-            href="https://github.com/ChristianChukwu"
+            href="https://github.com/dkrizt/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-violet-500 transition duration-200"
           >
-            <FontAwesomeIcon icon={faGithub} size="lg" />
+            <FontAwesomeIcon icon={faGithub} size="2xl" />
           </a>
           <a
-            href="https://linkedin.com/in/ChristianChukwu"
+            href="https://www.linkedin.com/in/christian-chukwu-2a4164211/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-blue-500 transition duration-200"
           >
-            <FontAwesomeIcon icon={faLinkedin} size="lg" />
+            <FontAwesomeIcon icon={faLinkedin} size="2xl" />
           </a>
           <a
-            href="https://twitter.com/ChristianChukwu"
+            href="https://x.com/Donkrizt"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-sky-500 transition duration-200"
           >
-            <FontAwesomeIcon icon={faTwitter} size="lg" />
+            <FontAwesomeIcon icon={faTwitter} size="2xl" />
           </a>
         </div>
 
         {/* Decorative Line */}
         <div
-          className={`w-full h-0.5 mt-2 ${
+          className={` w-1/3 h-0.5 mt-2 ${
             darkMode ? 'bg-gray-700' : 'bg-gray-300'
           }`}
         ></div>

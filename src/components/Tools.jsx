@@ -12,7 +12,7 @@ import {
   SiNodedotjs,
   SiTailwindcss,
   SiFramer,
-  SiFirebase,
+  SiDocker,
 } from 'react-icons/si';
 
 const Tools = () => {
@@ -31,36 +31,37 @@ const Tools = () => {
     },
     { name: 'Node.js', icon: <SiNodedotjs className="text-green-600" /> },
     { name: 'Framer Motion', icon: <SiFramer className="text-yellow-400" /> },
-    { name: 'Firebase', icon: <SiFirebase className="text-yellow-400" /> },
+    { name: 'Docker', icon: <SiDocker className="text-blue-400" /> },
   ];
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 text-center px-6 py-16 my-4 rounded-xl shadow-lg opacity-90 border-violet-700- z-10">
-      <motion.h2
-        initial={{ y: 100, opacity: 0 }}
-        animate={{ y: -10, opacity: 1 }}
-        whileInView={{ y: 0, opacity: 1, scale: 1.1 }}
-        transition={{ duration: 0.8 }}
-        className="text-4xl font-bold mb-6 bg-gradient-to-r from-violet-500 to-pink-500 bg-clip-text text-transparent"
-      >
-        Checkout Some Tools in My DevTools Box
-      </motion.h2>
-      <div className="grid grid-cols-2 m2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
-        {tools.map((tool, index) => (
-          <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: -10, opacity: 1 }}
-            whileInView={{ y: 0, opacity: 1, scale: 1.1 }}
-            transition={{ duration: 0.8 }}
-            key={index}
-            className="flex flex-col items-center p-4 rounded-lg shadow-md hover:scale-125 transition-transform duration-200"
-          >
-            <div className="text-4xl mb-2">{tool.icon}</div>
-            <p className="text-lg font-medium">{tool.name}</p>
-          </motion.div>
-        ))}
+    <>
+      <div className="text-center mt-8">
+        <motion.h2
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: -10, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1, scale: 1.1 }}
+          transition={{ duration: 0.8 }}
+          className="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 bg-gradient-to-r from-violet-500 to-pink-400 bg-clip-text text-transparent"
+        >
+          A peep at some of my tools
+        </motion.h2>
       </div>
-    </div>
+
+      <div className="text-center px-6 py-10 my-3 rounded-xl shadow-lg border-violet-700- z-10">
+        <div className="grid grid-cols-2 m2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
+          {tools.map((tool, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center p-4 rounded-lg shadow-md hover:scale-125 transition-transform duration-200"
+            >
+              <div className="text-4xl mb-2">{tool.icon}</div>
+              <p className="text-lg font-medium">{tool.name}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
   );
 };
 

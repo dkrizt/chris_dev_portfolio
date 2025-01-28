@@ -4,12 +4,12 @@ import ChrisIcon from '../assets/Chris-Icon-48.jpeg';
 
 const Nav = ({ isMenuOpen, setIsMenuOpen, setDarkMode, darkMode }) => {
   return (
-    <nav className="flex justify-between items-center p-4 md:py-7 bg-opacity-0 z-10">
+    <nav className="flex justify-between items-center p-4 md:py-7 bg-opacity-0 z-100 sticky top-0">
       <div className="text-lg font-bold text-purple-400">
         <img
           src={ChrisIcon}
           alt="Chris Logo image"
-          className="w-14 h-14 mt-4 ml-2 rounded-full object-cover block"
+          className="w-12 h-12 lg:w-14 lg:h-14  mt-4 ml-2 rounded-full object-cover block"
         />
       </div>
 
