@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import {
   faGithub,
   faLinkedin,
@@ -8,6 +9,31 @@ import {
 
 const Footer = ({ darkMode }) => {
   const currentYear = new Date().getFullYear();
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  // Handle scroll visibility
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowScrollButton(true);
+      } else {
+        setShowScrollButton(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
 
   return (
     <footer
@@ -60,6 +86,17 @@ const Footer = ({ darkMode }) => {
           }`}
         ></div>
       </div>
+
+      {/* Scroll to Top Button */}
+      {showScrollButton && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-8 right-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white p-4 rounded-full shadow-lg hover:from-pink-500 hover:to-orange-500 transition-all duration-300 animate-bounce"
+          aria-label="Scroll to top"
+        >
+          <FontAwesomeIcon icon={faArrowUp} size="lg" />
+        </button>
+      )}
     </footer>
   );
 };
