@@ -6,7 +6,7 @@ import ChrisImage from '../assets/Chris-Image.png';
 
 const Hero = ({ darkMode }) => {
   return (
-    <div className="flex lg:flex-row flex-col gap-4 px-6 md:mt-8 z-10 text-wrap">
+    <div className="flex lg:flex-row flex-col gap-4 px-6 md:mt-8 z-10 text-wrap relative">
       <div className="lg:w-9/12 my-14 leading-10 w-full">
         <div className="flex flex-col gap-6">
           <p
