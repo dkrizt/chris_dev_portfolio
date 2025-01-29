@@ -7,7 +7,7 @@ import ChrisImage from '../assets/Chris-Image.png';
 const Hero = ({ darkMode }) => {
   return (
     <div className="flex lg:flex-row flex-col gap-4 px-6 md:mt-8 z-10 text-wrap relative">
-      <div className="lg:w-9/12 my-14 leading-10 w-full">
+      <div className="lg:w-9/12 my-7 md:my-14 leading-10 w-full">
         <div className="flex flex-col gap-6">
           <p
             className={`font-poppins font-bold text-3xl my-2 lg:text-6xl md:text-5xl text-white-400 ${
@@ -41,7 +41,7 @@ const Hero = ({ darkMode }) => {
             className="bg-gradient-to-r from-violet-500 via-pink-500 to-orange-500 bg-clip-text text-transparent font-poppins font-bold text-3xl lg:text-6xl md:text-5xl"
           />
           <p
-            className={`lg:w-7/12 mt-10 sm:text-base lg:text-2xl flex-wrap leading-4 md:leading-8 font-roboto my-2 md:my-5 ${
+            className={`lg:w-7/12 mt-10 sm:text-base lg:text-2xl flex-wrap leading-6 md:leading-8 font-roboto my-2 md:my-5 ${
               darkMode ? 'text-white' : 'text-black'
             }`}
           >
@@ -51,7 +51,7 @@ const Hero = ({ darkMode }) => {
           </p>
           <motion.a
             href="mailto:donkrizt@gmail.com?subject=Let's Connect&body=Hi Christian,"
-            className="bg-gradient-to-r from-violet-500 to-pink-500 hover:from-pink-500 hover:to-orange-500 transition duration-300 rounded-full w-40 h-8 px-4 py-2 md:w-44 md:h-12 md:px-5 md:py-2  text-white font-semibold flex items-center gap-2"
+            className="bg-gradient-to-r from-violet-500 to-pink-500 hover:from-pink-500 hover:to-orange-500 transition duration-300 rounded-full w-44 h-12 px-5 py-2  text-white font-semibold flex items-center gap-2"
             initial={{ y: 100, opacity: 0.5 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
