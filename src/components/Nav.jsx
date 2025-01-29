@@ -10,7 +10,7 @@ const Nav = ({ isMenuOpen, setIsMenuOpen, setDarkMode, darkMode }) => {
         <img
           src={ChrisIcon}
           alt="Chris Logo image"
-          className="w-12 h-12 lg:w-14 lg:h-14 mt-4 ml-2 rounded-full object-cover block"
+          className="w-12 h-12 lg:w-14 lg:h-14 lg:mt-3 mt-1 ml-2 rounded-full object-cover block"
         />
       </div>
 

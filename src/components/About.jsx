@@ -6,7 +6,7 @@ const About = ({ darkMode }) => {
       {/* Header Section */}
       <div className="text-center">
         <h2
-          className={`text-3xl sm:text-4xl md:text-5xl font-bold  text-gray-100 mb-4 ${
+          className={`text-2xl md:text-4xl font-bold  text-gray-100 mb-4 ${
             darkMode ? 'text-gray-100' : 'text-gray-800'
           }`}
         >

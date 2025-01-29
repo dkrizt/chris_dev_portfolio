@@ -41,7 +41,7 @@ const Hero = ({ darkMode }) => {
             className="bg-gradient-to-r from-violet-500 via-pink-500 to-orange-500 bg-clip-text text-transparent font-poppins font-bold text-3xl lg:text-6xl md:text-5xl"
           />
           <p
-            className={`lg:w-7/12 mt-10 sm:text-base lg:text-2xl flex-wrap leading-8 font-roboto my-5 ${
+            className={`lg:w-7/12 mt-10 sm:text-base lg:text-2xl flex-wrap leading-4 md:leading-8 font-roboto my-2 md:my-5 ${
               darkMode ? 'text-white' : 'text-black'
             }`}
           >
@@ -51,7 +51,7 @@ const Hero = ({ darkMode }) => {
           </p>
           <motion.a
             href="mailto:donkrizt@gmail.com?subject=Let's Connect&body=Hi Christian,"
-            className="bg-gradient-to-r from-violet-500 to-pink-500 hover:from-pink-500 hover:to-orange-500 transition duration-300 rounded-full w-44 h-12 px-5 py-2 text-white font-semibold flex items-center gap-2"
+            className="bg-gradient-to-r from-violet-500 to-pink-500 hover:from-pink-500 hover:to-orange-500 transition duration-300 rounded-full w-40 h-8 px-4 py-2 md:w-44 md:h-12 md:px-5 md:py-2  text-white font-semibold flex items-center gap-2"
             initial={{ y: 100, opacity: 0.5 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{
@@ -64,16 +64,16 @@ const Hero = ({ darkMode }) => {
         </div>
       </div>
       <motion.div
-        className="w-auto px-0 relative flex justify-center items-center"
+        className=" mx-auto w-52 h-96 md:w-auto px-0 relative flex "
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        whileInView={{ scale: 1.2 }}
+        whileInView={{ scale: 1.1 }}
         transition={{ duration: 0.8 }}
       >
         <img
           src={ChrisImage}
           alt="Christian Chukwu"
-          className="my-8 rounded-full object-contain shadow-lg block"
+          className="my-8 rounded-full object-contain shadow-lg block justify-center items-center"
         />
       </motion.div>
     </div>

@@ -53,7 +53,7 @@ const Projects = () => {
       id="projects"
       className="px-6 py-12 my-6 mt-16 bg-gray-100 dark:bg-gray-900 text-center rounded-xl shadow-lg z-10"
     >
-      <h1 className="text-4xl font-bold bg-gradient-to-r from-orange-100 to-pink-400 bg-clip-text text-transparent mb-6">
+      <h1 className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-orange-100 to-pink-400 bg-clip-text text-transparent mb-6">
         Projects Engaged In Previously
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">

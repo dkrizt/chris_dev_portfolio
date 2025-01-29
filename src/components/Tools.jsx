@@ -42,7 +42,7 @@ const Tools = () => {
           animate={{ y: -10, opacity: 1 }}
           whileInView={{ y: 0, opacity: 1, scale: 1.1 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 bg-gradient-to-r from-violet-500 to-pink-400 bg-clip-text text-transparent"
+          className="text-2xl md:text-4xl font-bold mb-10 bg-gradient-to-r from-violet-500 to-pink-400 bg-clip-text text-transparent"
         >
           A peep at some of my tools
         </motion.h2>
@@ -55,8 +55,8 @@ const Tools = () => {
               key={index}
               className="flex flex-col items-center p-4 rounded-lg shadow-md hover:scale-125 transition-transform duration-200"
             >
-              <div className="text-4xl mb-2">{tool.icon}</div>
-              <p className="text-lg font-medium">{tool.name}</p>
+              <div className="text-2xl md:text-4xl mb-2">{tool.icon}</div>
+              <p className="text-base md:text-lg font-medium">{tool.name}</p>
             </div>
           ))}
         </div>

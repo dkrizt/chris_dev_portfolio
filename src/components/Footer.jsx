@@ -59,7 +59,7 @@ const Footer = ({ darkMode }) => {
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-violet-500 transition duration-200"
           >
-            <FontAwesomeIcon icon={faGithub} size="2xl" />
+            <FontAwesomeIcon icon={faGithub} size="lg" />
           </a>
           <a
             href="https://www.linkedin.com/in/christian-chukwu-2a4164211/"
@@ -67,7 +67,7 @@ const Footer = ({ darkMode }) => {
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-blue-500 transition duration-200"
           >
-            <FontAwesomeIcon icon={faLinkedin} size="2xl" />
+            <FontAwesomeIcon icon={faLinkedin} size="lg" />
           </a>
           <a
             href="https://x.com/Donkrizt"
@@ -75,7 +75,7 @@ const Footer = ({ darkMode }) => {
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-sky-500 transition duration-200"
           >
-            <FontAwesomeIcon icon={faTwitter} size="2xl" />
+            <FontAwesomeIcon icon={faTwitter} size="lg" />
           </a>
         </div>
 
