@@ -45,8 +45,9 @@ const Hero = ({ darkMode }) => {
               darkMode ? 'text-white' : 'text-black'
             }`}
           >
-            My most used tech stacks includes JavaScript (React, Nodejs and
-            Nextjs), TailwindCSS, Express.js & PostgreSQL or Firebase/Firestore!
+            It would be an honor to collaborate with you and your team on your
+            next big software development project. I’m excited to contribute my
+            skills, add value, and embrace opportunities to learn and grow!
           </p>
           <motion.a
             href="mailto:donkrizt@gmail.com?subject=Let's Connect&body=Hi Christian,"
