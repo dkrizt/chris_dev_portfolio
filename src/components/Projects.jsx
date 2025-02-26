@@ -1,23 +1,18 @@
 import React from 'react';
-
+import blogAppImg from '../assets/blogAppImg.png';
+/* import taskManagerImage from '../assets/taskmanager.png';
+import ecommerceImage from '../assets/ecommerce.png'; */
 const Projects = () => {
   const projectData = [
     {
       id: 1,
-      title: '01 | SOCIAL MEDIA APP',
+      title: '01 | BLOG APP',
       description:
-        'A fun and interactive social media platform designed for sharing posts and connecting with friends. Built with TypeScript, Next.js, and MongoDB for seamless performance.',
-      image: '/assets/images/retweet.png',
-      livePreview: 'https://retweet-frontend.vercel.app/',
-      github: 'https://github.com/somkenemuscle/Retweet-backend',
-      techStack: [
-        'typescript',
-        'nextjs',
-        'tailwindcss',
-        'nodejs',
-        'express',
-        'mongodb',
-      ],
+        'A Light weight Blog App that is designed to permit blog posts using browser local storage session with reduxtoolkit for state management',
+      image: blogAppImg,
+      livePreview: 'https://chris-blog-app.netlify.app/',
+      github: 'https://github.com/dkrizt/Blog-App/',
+      techStack: ['react', 'tailwindcss'],
     },
     {
       id: 2,

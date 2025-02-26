@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { TypeAnimation } from 'react-type-animation';
-import ChrisImage from '../assets/Chris-Image.png';
+import chrisImg from '../assets/chrisImg.png';
 
 const Hero = ({ darkMode }) => {
   return (
@@ -41,7 +41,7 @@ const Hero = ({ darkMode }) => {
             className="bg-gradient-to-r from-violet-500 via-pink-500 to-orange-500 bg-clip-text text-transparent font-poppins font-bold text-3xl lg:text-6xl md:text-5xl"
           />
           <p
-            className={`lg:w-7/12 mt-10 sm:text-base lg:text-2xl flex-wrap leading-6 md:leading-8 font-roboto my-2 md:my-5 ${
+            className={`lg:w-7/12 pt-16 md:pt-20 text-sm flex-wrap leading-4 tracking-normal font-roboto my-2 md:my-5 ${
               darkMode ? 'text-white' : 'text-black'
             }`}
           >
@@ -64,14 +64,14 @@ const Hero = ({ darkMode }) => {
         </div>
       </div>
       <motion.div
-        className=" mx-auto w-52 h-96 md:w-auto px-0 relative flex "
+        className=" mx-auto w-auto max-w-72 h-auto md:w-auto px-0 relative flex "
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         whileInView={{ scale: 1.1 }}
         transition={{ duration: 0.8 }}
       >
         <img
-          src={ChrisImage}
+          src={chrisImg}
           alt="Christian Chukwu"
           className="my-8 rounded-full object-contain shadow-lg block justify-center items-center"
         />
