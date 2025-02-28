@@ -1,45 +1,54 @@
 import React from 'react';
 import blogAppImg from '../assets/blogAppImg.png';
-/* import taskManagerImage from '../assets/taskmanager.png';
-import ecommerceImage from '../assets/ecommerce.png'; */
+import JCStocksImg from '../assets/JCStocksImg.png';
+import lms from '../assets/lms.png';
+
 const Projects = () => {
   const projectData = [
     {
       id: 1,
-      title: '01 | BLOG APP',
+      title: '01 | JC STOCKS- INVENTORY MANAGEMENT APP',
       description:
-        'A Light weight Blog App that is designed to permit blog posts using browser local storage session with reduxtoolkit for state management',
+        'A full-stack Inventory Management Dashboard for tracking stock levels, orders, and sales. It features real-time updates, authentication, and analytics.',
+      image: JCStocksImg,
+      livePreview: 'https://jcstocks-inventorymanagement.netlify.app/dashboard',
+      github: 'https://github.com/dkrizt/JCstocks-app',
+      techStack: [
+        'nextjs',
+        'typescript',
+        'nodejs',
+        'tailwindcss',
+        'express',
+        'postgresql',
+      ],
+    },
+    {
+      id: 2,
+      title: '02 | BLOG APP',
+      description:
+        'A Light weight Blog App that is designed to persist blog posts using browser local storage session with reduxtoolkit for state management',
       image: blogAppImg,
       livePreview: 'https://chris-blog-app.netlify.app/',
       github: 'https://github.com/dkrizt/Blog-App/',
       techStack: ['react', 'tailwindcss'],
     },
-    {
-      id: 2,
-      title: '02 | TASK MANAGEMENT TOOL',
-      description:
-        'A simple and effective task management application to organize and prioritize tasks efficiently. Built with React, Node.js, and PostgreSQL.',
-      image: '/assets/images/taskmanager.png',
-      livePreview: 'https://taskmanager.vercel.app/',
-      github: 'https://github.com/username/taskmanager',
-      techStack: [
-        'react',
-        'nodejs',
-        'tailwindcss',
-        'postgresql',
-        'express',
-        'docker',
-      ],
-    },
+
     {
       id: 3,
-      title: '03 | E-COMMERCE PLATFORM',
+      title: '03 | LEARNING MANAGEMENT SYSTEM',
       description:
-        'An elegant e-commerce platform to explore products, add to cart, and manage orders seamlessly. Built with Next.js, Prisma, and Stripe integration.',
-      image: '/assets/images/ecommerce.png',
-      livePreview: 'https://ecommerce.vercel.app/',
-      github: 'https://github.com/username/ecommerce-platform',
-      techStack: ['nextjs', 'prisma', 'stripe', 'tailwindcss', 'typescript'],
+        'A scalable LMS for managing online courses, assignments, and student progress. It supports role-based authentication, media uploads, and payment integration',
+      image: lms,
+      livePreview: 'https://learning-managment-app.vercel.app/',
+      github: 'https://github.com/dkrizt/Learning-managment-app',
+      techStack: [
+        'nodejs',
+        'nextjs',
+        'prisma',
+        'tailwindcss',
+        'typescript',
+        'docker',
+      ],
     },
   ];
 

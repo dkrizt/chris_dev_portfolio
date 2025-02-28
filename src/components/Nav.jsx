@@ -23,7 +23,6 @@ const Nav = ({ isMenuOpen, setIsMenuOpen, setDarkMode, darkMode }) => {
         <div className="flex gap-6">
           <div className="pt-4">
             <DarkModeSwitch
-              className="hover:text-yellow-400"
               style={{ marginBottom: '1rem' }}
               checked={darkMode}
               onChange={setDarkMode}
